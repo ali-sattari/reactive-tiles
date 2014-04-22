@@ -1,0 +1,65 @@
+body {
+    font: 12px tahoma, sans-serif;
+    background-color: #e7e7e7;
+	color: #595959;
+}
+div.wraper {
+    width: 950px;
+    margin: 50px auto 0;
+}
+div#content {
+    position: relative;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	padding: 10px 0;
+	clear: both;
+}
+
+/* tiles */
+div.tiles {
+	position: relative;
+	width: 950px;
+	height: 590px;
+}
+div.tile {
+	position: absolute;
+	overflow: hidden;
+	z-index: 100;
+}
+div.tile:hover {
+	z-index: 101;
+}
+div.tile img,
+div.tile canvas {
+	display: block;
+	position: absolute;
+	image-rendering: optimizeQuality;
+}
+div.tile div.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(15, 15, 15, 0.85);
+}
+div.tile div.infoContent {
+    padding: 10px;
+}
+div.tile div.infoContent h3 {
+    font: 12px Arial, sans-serif;
+    color: #fff;
+}
+div.tile div.infoContent p {
+    font: 11px Arial, sans-serif;
+    color: #828282;
+}
+div.info h3 {
+	margin: 0 0 5px;
+}
+
+div.tilesLoading {
+	background: url('static/image/loading.gif') center center no-repeat;
+}
+div.tilesLoading div.spinner-content {
+	margin-top: -100px;
+	font-size: 14px;
+}
